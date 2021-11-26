@@ -6,5 +6,36 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  siteMetadata: {
+    title: 'the BeyondTheKeys() Blog',
+    description: 'horrors within the code'  
+  },
+
+  plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options:{
+        name: `images`,
+        path: `${__dirname}/src/images`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blog`,
+        path: `${__dirname}/src/blog/`
+      }
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `space mono\: 400,400i,700b,700i`
+        ],
+        display: "swap"
+      }
+    },
+    `gatsby-transformer-remark`,
+    `gatsby-plugin-sass`
+  ]
 }
