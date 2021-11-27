@@ -9,12 +9,12 @@ export default function Home({data}) {
 
   return (<>
       <Intro_modal/>
-      <div>
+      {/*<div>
         <h1>{title}</h1>
         <p>{description}</p>
         <Link to="/blog">Read my blog</Link>
         <img src={data.image.publicURL} alt="deathstar"/>
-      </div>
+      </div>*/}
     </>)
 }
 

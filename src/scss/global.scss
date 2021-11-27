@@ -1,6 +1,12 @@
+@import "helpers";//.rb,.yb
 @import "fonts";
 // [Anon,PressStart,Righteous,ShareTech,SpaceMono,Titi]
 
+*{
+	margin: 0px;
+	overflow-x: hidden;
+	box-sizing: border-box;
+}
 html{
-	@include Titi();
+	@include PressStart(.75rem);
 }

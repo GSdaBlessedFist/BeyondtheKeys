@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "BeyondTheKeys_blog",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "horror stories from the digital void",
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
@@ -15,7 +15,6 @@
   },
   "dependencies": {
     "gatsby": "^4.2.0",
-    "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-sass": "^5.2.0",
     "gatsby-source-filesystem": "^4.2.0",
     "gatsby-transformer-remark": "^5.2.0",

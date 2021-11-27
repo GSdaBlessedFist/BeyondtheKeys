@@ -1,0 +1,9 @@
+@mixin b($color:red,$size:2px){
+	border: $size $color solid;
+}
+.rb{
+	@include b;
+}
+.yb{
+	@include b(yellow);
+}
