@@ -1,3 +1,6 @@
+@import "fonts";
+// [Anon,PressStart,Righteous,ShareTech,SpaceMono,Titi]
+
 html{
-	font-family: space mono;
+	@include Titi();
 }

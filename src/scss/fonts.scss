@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Press+Start+2P&family=Righteous&family=Share+Tech+Mono&family=Space+Mono&family=Titillium+Web&display=swap');
+
+@mixin Anon($s:1rem){
+	font-family: 'Anonymous Pro', monospace;
+	font-size: $s;
+}
+@mixin PressStart($s:1rem){
+	font-family: 'Press Start 2P', cursive;
+	font-size: $s;
+}
+@mixin Righteous($s:1rem){
+	font-family: 'Righteous';
+	font-size: $s;
+}
+@mixin ShareTech($s:1rem){
+	font-family: 'Share Tech Mono', monospace;
+	font-size: $s;
+}
+@mixin SpaceMono($s:1rem){
+	font-family: 'Space Mono', monospace;
+	font-size: $s;
+}
+@mixin Titi($s:1rem){
+	font-family: 'Titillium Web', sans-serif;
+	font-size: $s;
+}
