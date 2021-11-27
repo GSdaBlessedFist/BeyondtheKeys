@@ -1,6 +1,7 @@
 import React from "react"
 import {graphql,Link} from "gatsby";
 import "../scss/global.scss";
+import Layout from "../components/layout";
 import Intro_modal from "../components/intro_modal";
 
 export default function Home({data}) {
@@ -8,7 +9,10 @@ export default function Home({data}) {
   const {title,description} = data.site.siteMetadata;
 
   return (<>
-      <Intro_modal/>
+      <Intro_modal visible={true}/>
+      <Layout title={title}>
+        THIS ONE
+      </Layout>      
       {/*<div>
         <h1>{title}</h1>
         <p>{description}</p>

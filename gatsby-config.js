@@ -7,7 +7,7 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: 'the BeyondTheKeys() Blog',
+    title: 'BeyondTheKeys(_)',
     description: 'horrors within the code'  
   },
 

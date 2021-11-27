@@ -1,9 +1,49 @@
 @import "helpers";
+@import "variables";
 @import "fonts";
 
+@mixin fadeOut($t:.75s){
+	animation: fadeOut 2s ease-out 1s forwards;
+}
+@keyframes fadeOut{
+	0%{opacity: 1}
+	100%{opacity: 0}
+}
+@keyframes blinky{
+	from{opacity: 0}
+	to{opacity: 1}
+}
+.fade-out{
+	@include fadeOut;
+}
 .intro-modal{
 	display: block;
 	width: 100%;
 	height: 100vh;
 	background: #222;
+	padding: 20px;
+	&_text-box{
+		display: flex;
+		margin: 0 auto;
+		align-items: center;
+		height: 100%;
+		padding: 10px;
+		@include PressStart(.85rem);
+		@at-root{
+			.introText,.introCursor {
+				color: $introTextColor;
+				line-height: 2rem;
+			}
+			.introButton{
+				font-size: 1.25rem;
+				margin-top: 15px;
+				text-align: right;
+			}
+			.blinky{
+				height: 25px;
+				color: yellow;
+				animation: blinky 1.5s steps(2) infinite;
+			}
+		}
+	}
 }
