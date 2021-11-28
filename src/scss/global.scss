@@ -7,9 +7,9 @@
 	margin: 0px;
 	overflow: hidden;
 	box-sizing: border-box;
-	background: #222;
+	background: transparent;
 }
 html{
 	@include Titi(.75rem);
-	color: $introTextColor;
+	color: $tan;
 }

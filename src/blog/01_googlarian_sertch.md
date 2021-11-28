@@ -2,6 +2,7 @@
 title: the Googlarian Sertch
 author: GS
 date: 2021-11-25
+summary: The left overs are hungry
 ---
 
 ## the Googlarian Sertch

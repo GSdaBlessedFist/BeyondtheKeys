@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-export default function BlogPost({ data }) {
+export default function StoryPost({ data }) {
   const post = data.markdownRemark
 
   return (
@@ -13,7 +13,7 @@ export default function BlogPost({ data }) {
   )
 }
 export const query = graphql`
-  query BlogQuery($slug: String!) {
+  query StoryQuery($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {

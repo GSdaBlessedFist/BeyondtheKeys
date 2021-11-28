@@ -3,7 +3,7 @@
 @import "fonts";
 
 @mixin fadeOut($t:.75s){
-	animation: fadeOut 2s ease-out 1s forwards;
+	animation: fadeOut $t linear 1s forwards;
 }
 @keyframes fadeOut{
 	0%{opacity: 1}
@@ -14,7 +14,7 @@
 	to{opacity: 1}
 }
 .fade-out{
-	@include fadeOut;
+	@include fadeOut(2s);
 }
 .intro-modal{
 	display: block;
@@ -22,16 +22,18 @@
 	height: 100vh;
 	background: #222;
 	padding: 20px;
+	opacity: 1;
 	&_text-box{
 		display: flex;
 		margin: 0 auto;
 		align-items: center;
 		height: 100%;
-		padding: 10px;
+		padding: 0 1.45rem;
+		/*padding: 0 25%; desktop*/
 		@include PressStart(.85rem);
 		@at-root{
 			.introText,.introCursor {
-				color: $introTextColor;
+				color: $tan;
 				line-height: 2rem;
 			}
 			.introButton{
