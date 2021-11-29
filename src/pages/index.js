@@ -10,7 +10,7 @@ export default function Home({data}) {
 
   return (<>
       <IntroModal visible={true}/>
-      <Layout>
+      <Layout >
         THIS ONE
       </Layout>      
       {/*<div>

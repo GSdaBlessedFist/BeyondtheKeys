@@ -1,10 +1,11 @@
 import React,{useState,useEffect} from 'react';
 import Typewriter from 'typewriter-effect/dist/core';
+import Link from 'gatsby';
 import "../scss/intro_modal.scss";
 
-export default function IntroModal({visible}){
+export default function Intro_modal({visible}){
 	const app = document.getElementById('app');
-	
+
 	useEffect(()=>{
 		document.addEventListener('click',(e)=>{
 			if(e.target.matches(".introButton")){

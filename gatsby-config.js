@@ -23,7 +23,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `stories`,
-        path: `${__dirname}/src/pages/stories/`
+        path: `${__dirname}/src/stories/`
       }
     },
     `gatsby-transformer-remark`,
