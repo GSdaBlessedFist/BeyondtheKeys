@@ -3,5 +3,28 @@
 @import "fonts";
 
 .artwork-container{
+	
 	@extend %pageContainer;
+	@at-root{
+		.artwork-galleryStrip{
+			overflow-y: scroll;
+			@at-root{
+				.galleryStrip-piece{
+					&--title{
+						width: 300px;
+						@include b($tan);
+						@include Anon;
+						padding: 5px;
+					}
+					&--image{
+						width: 300px;
+						height: 360px;
+						background: cover;
+						@include b($darkerTan);
+					}
+				}
+			}
+			
+		}
+	}
 }

@@ -35,7 +35,7 @@ export default function Intro_modal({visible}){
 		  .typeString(`<br>`)
 		  .pauseFor(500)
 		  .changeDelay(50)
-		  .typeString("Digital life pulsates through it's code, ")
+		  .typeString("digital life pulsates through it's code, ")
 		  .pauseFor(750)
 		  .typeString("orderly ")
 		  .pauseFor(1000)
