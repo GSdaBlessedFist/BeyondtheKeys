@@ -6,14 +6,32 @@
 	@extend %pageContainer;
 	overflow-y: scroll;
 	@at-root{
-		.storyLink-container{
-			width: 100%;
-			margin: 5px 0;
-			@include b;
-			padding: 5px;
-		}
-		.storyLink-title{
-			color: white;
+		.storyLink{
+			&--container{
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+				margin: 5px 0;
+				@include b;
+				padding: 5px;
+				& small{
+					@include Anon;
+					margin-top: 10px ;
+					color: $darkerTan;
+				}
+			}
+			&--title{
+				color: white;
+				@include PressStart(1.05rem);
+			}
+			&--summary{
+				text-align: center;
+				margin-top: 10px;
+				color: $tan;
+				@include PressStart(.75rem);
+			}
 		}
 	}
 }

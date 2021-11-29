@@ -1,6 +1,6 @@
 ---
 title: hell Word
-author: GS
+author: GuyShifty
 date: 2021-11-25
 summary: ancient demon + ancient code
 ---

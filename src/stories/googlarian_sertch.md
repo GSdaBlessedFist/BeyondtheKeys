@@ -1,6 +1,6 @@
 ---
 title: the Googlarian Sertch
-author: GS
+author: GuyShifty
 date: 2021-11-25
 summary: The left overs are hungry
 ---

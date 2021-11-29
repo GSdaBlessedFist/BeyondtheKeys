@@ -15,10 +15,11 @@ export default function Stories({data}){
 					
 					{posts.map(post => (
 								<Link to={post.fields.slug} >
-					        <article key={post.id} className="storyLink-container">
-					          	<h2 className="storyLink-title">{post.frontmatter.title}</h2>
-						          <small>{post.frontmatter.author}, {post.frontmatter.date}</small>
-						          <p><strong>{post.frontmatter.summary}</strong></p>
+					        <article key={post.id} className="storyLink--container">
+					          	<h2 className="storyLink--title">{post.frontmatter.title}</h2>
+						          
+						          <p className="storyLink--summary"><strong>{post.frontmatter.summary}</strong></p>
+						          <small>Author: {post.frontmatter.author}  |  Posted: {post.frontmatter.date}</small>
 						      </article>
 				        </Link>
 				     ))}
