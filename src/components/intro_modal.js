@@ -19,12 +19,13 @@ export default function Intro_modal({visible}){
 
 		var typewriter = new Typewriter(app, {
 		  loop: false,
-		  autoStart: false,
+		  autoStart: true,
 		  wrapperClassName: "introText",
 		  cursorClassName: "introCursor"
 		});
 
 		typewriter
+		  .start()
 		  .pauseFor(750)
 		  .changeDelay(50)
 		  .typeString('A good program, some say...')
@@ -34,7 +35,7 @@ export default function Intro_modal({visible}){
 		  .typeString(`<br>`)
 		  .pauseFor(500)
 		  .changeDelay(50)
-		  .typeString("digital life pulsates through it's code, ")
+		  .typeString("Digital life pulsates through it's code, ")
 		  .pauseFor(750)
 		  .typeString("orderly ")
 		  .pauseFor(1000)
@@ -55,7 +56,7 @@ export default function Intro_modal({visible}){
 		  .typeString("<div style='margin-top:10px;'>The darkness of the void awaits you...</div>")
 		  .pauseFor(1000)
 		  .typeString("<div class='introButton'>BeyondTheKeys(<span class='blinky'>_</span>)</div>")
-		  .start()
+		  
 		  /////////////////////////////////////////////////////
 		  
 	})

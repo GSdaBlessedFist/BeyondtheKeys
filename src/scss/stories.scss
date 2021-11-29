@@ -20,7 +20,7 @@
 				border-bottom: 3px $darkerTan solid;
 				border-right: 2px $darkerTan solid;
 				border-top: 1px $darkerTan solid;
-				padding: 5px;
+				padding: 15px;
 				transition: all .75s;
 				&:hover{
 					border-left: 4px $tan solid;
@@ -36,7 +36,7 @@
 			}
 			&--title{
 				color: white;
-				@include PressStart(1.05rem);
+				@include PressStart(1rem);
 			}
 			&--summary{
 				text-align: center;
