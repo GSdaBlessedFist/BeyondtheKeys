@@ -2,3 +2,18 @@
 @import "variables";
 @import "fonts";
 
+.story-post{
+	&--title{
+		color: white;
+		@include PressStart(1.05rem);
+	}
+	& small{
+		
+		margin-top: 10px ;
+		color: $darkerTan;
+	}
+	&--content{
+		line-height: 25px;
+		@include PressStart(.85rem);
+	}
+}

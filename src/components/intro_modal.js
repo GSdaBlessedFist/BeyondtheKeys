@@ -30,7 +30,7 @@ export default function Intro_modal({visible}){
 		  .typeString('A good program, some say...')
 		  .pauseFor(1200)
 		  .changeDelay(75)
-		  .typeString("is alive.")
+		  .typeString("IS alive.")
 		  .typeString(`<br>`)
 		  .pauseFor(500)
 		  .changeDelay(50)

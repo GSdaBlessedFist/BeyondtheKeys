@@ -14,8 +14,20 @@
 				align-items: center;
 				width: 100%;
 				margin: 5px 0;
-				@include b;
+				// @include b($darkerTan);
+				box-sizing: border-box;
+				border-left: 4px $darkerTan solid;
+				border-bottom: 3px $darkerTan solid;
+				border-right: 2px $darkerTan solid;
+				border-top: 1px $darkerTan solid;
 				padding: 5px;
+				transition: all .75s;
+				&:hover{
+					border-left: 4px $tan solid;
+					border-bottom: 3px $tan solid;
+					border-right: 2px $tan solid;
+					border-top: 1px $tan solid;
+				}
 				& small{
 					@include Anon;
 					margin-top: 10px ;

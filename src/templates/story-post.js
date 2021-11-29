@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout";
+import "../scss/story-post.scss";
 
 export default function StoryPost({ data }) {
   const post = data.markdownRemark
@@ -8,9 +9,9 @@ export default function StoryPost({ data }) {
   return (
     <Layout>
       <div className="stories-container">
-        <h1>{post.frontmatter.title}</h1>
-        <small>{post.frontmatter.date}</small>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <h1 className="story-post--title">{post.frontmatter.title}</h1>
+        <small>Author: {post.frontmatter.author}  |  Posted: {post.frontmatter.date}</small>
+        <div className="story-post--content" dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     </Layout>
   )
