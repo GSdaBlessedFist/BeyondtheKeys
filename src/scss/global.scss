@@ -9,6 +9,10 @@
 	box-sizing: border-box;
 	background: transparent;
 }
+a{
+	text-decoration: none;
+	color: $tan;
+}
 html{
 	@include Titi(.75rem);
 	color: $tan;

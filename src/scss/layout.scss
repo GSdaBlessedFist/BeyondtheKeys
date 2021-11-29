@@ -46,6 +46,9 @@
 			font-size: 1.5rem;
 			background: transparent;
 			transition: all .50s;
+			&>Link{
+				color: $tan;
+			}
 			&:hover{
 				border-left: 2px hsla(34,44%,69%,1) solid;
 				border-right: 2px hsla(34,44%,69%,1) solid;
@@ -60,17 +63,21 @@
 		align-items: center;
 		width: 100%;
 		background: #222;
-		@include b(yellow,3px)
 	}
 	&_footer{
 		grid-area: footer;
 		display: flex;
+		justify-content: center;
+		align-items: center;
 		position: relative;
 		background: $tan;
+		color: #222;
+		font-size: 2rem;
+		font-weight: bold;
 	}
 }
 .navLinks{
 	text-decoration: none;
-	color: $tan;
+	color: white;
 	background: transparent;
 }

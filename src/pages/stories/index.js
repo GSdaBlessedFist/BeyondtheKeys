@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql, Link} from "gatsby";
-import Layout from "../components/layout";
-import "../scss/stories.scss";
+import Layout from "../../components/layout";
+import "../../scss/stories.scss";
 
 export default function Stories({data}){
 	
@@ -14,13 +14,16 @@ export default function Stories({data}){
 					<h1>Stories</h1>
 					
 					{posts.map(post => (
-				        <article key={post.id} className="story-container">
-				        	<Link to={post.fields.slug} >
-				          	<h2>{post.frontmatter.title}</h2>
-				          </Link>
+							<Link to={post.fields.slug} >
+				        <article key={post.id} className="storyLink-container ">
+				        	
+
+				          	<h2 className="storyLink_title">{post.frontmatter.title}</h2>
+				          
 				          <small>{post.frontmatter.author}, {post.frontmatter.date}</small>
 				          <p><strong>{post.frontmatter.summary}</strong></p>
 				        </article>
+				       </Link>
 				     ))}
 				</div>	
       </div>

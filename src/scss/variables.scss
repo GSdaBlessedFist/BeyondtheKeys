@@ -1,2 +1,10 @@
 $tan : hsl(34,44%,69%);
-$darkerTan: hsl(34, 44%, 30%)
+$darkerTan: hsl(34, 44%, 30%);
+
+%pageContainer {
+	display: block;
+	width: 90%;
+	height:95%;
+	// @include b;
+	padding: 10px;
+}

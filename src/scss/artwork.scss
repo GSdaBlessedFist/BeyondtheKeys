@@ -3,9 +3,5 @@
 @import "fonts";
 
 .artwork-container{
-	display: block;
-	width: 90%;
-	height:90%;
-	@include b;
-	padding: 10px;
+	@extend %pageContainer;
 }

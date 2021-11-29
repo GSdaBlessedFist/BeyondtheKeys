@@ -2,15 +2,15 @@ import React from "react"
 import {graphql,Link} from "gatsby";
 import "../scss/global.scss";
 import Layout from "../components/layout";
-import Intro_modal from "../components/intro_modal";
+import IntroModal from "../components/intro_modal";
 
 export default function Home({data}) {
   
   const {title,description} = data.site.siteMetadata;
 
   return (<>
-      <Intro_modal visible={true}/>
-      <Layout title={title}>
+      <IntroModal visible={true}/>
+      <Layout>
         THIS ONE
       </Layout>      
       {/*<div>

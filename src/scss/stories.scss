@@ -3,18 +3,18 @@
 @import "fonts";
 
 .stories-container{
-	display: block;
-	width: 90%;
-	height:90%;
-	@include b;
-	padding: 10px;
+	@extend %pageContainer;
 	overflow-y: scroll;
 	@at-root{
-		.story-container{
+		.storyLink-container{
 			width: 100%;
 			margin: 5px 0;
-			@include b;
+			border-top: 2px $darkerTan solid;
+			border-bottom: 2px $darkerTan solid;
 			padding: 5px;
+		}
+		.storyLink_title{
+			color: white;
 		}
 	}
 }
