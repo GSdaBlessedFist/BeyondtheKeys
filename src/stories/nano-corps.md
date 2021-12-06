@@ -3,6 +3,8 @@ title: Nano Corps
 author: GuyShifty
 date: 2021-11-28
 summary: corporation,nanobots,zombies
+artwork: "../images/sillyfish.jpg"
+artworkDescription: digital zombie
 ---
 \
 Lorem ipsum dolor sit amet consectetur adipisicing elit. 

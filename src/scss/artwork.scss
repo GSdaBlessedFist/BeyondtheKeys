@@ -3,11 +3,11 @@
 @import "fonts";
 
 .artwork-container{
-	
+	overflow-y: scroll;
 	@extend %pageContainer;
 	@at-root{
 		.artwork-galleryStrip{
-			overflow-y: scroll;
+			
 			@at-root{
 				.galleryStrip-piece{
 					&--title{
@@ -17,10 +17,12 @@
 						padding: 5px;
 					}
 					&--image{
-						width: 300px;
+						// width: 300px;
+						width: clamp(300px,100%,600px);
 						height: 360px;
 						background: cover;
 						@include b($darkerTan);
+						margin-bottom: 5px;
 					}
 				}
 			}

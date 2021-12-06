@@ -15,14 +15,17 @@
   },
   "dependencies": {
     "gatsby": "^4.2.0",
+    "gatsby-plugin-image": "^2.2.0",
     "gatsby-plugin-sass": "^5.2.0",
+    "gatsby-plugin-sharp": "^4.2.0",
     "gatsby-source-filesystem": "^4.2.0",
     "gatsby-transformer-remark": "^5.2.0",
+    "gatsby-transformer-sharp": "^4.2.0",
     "gsap": "^3.8.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "sass": "^1.43.5",
-    "typewriter-effect": "^2.18.2"
+    "typed.js": "^2.0.12"
   },
   "devDependencies": {
     "prettier": "^2.4.1"

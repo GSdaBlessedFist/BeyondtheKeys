@@ -1,19 +1,24 @@
 import React from 'react';
 import { graphql, Link} from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import Layout from "../components/layout";
 import "../scss/artwork.scss";
 
-export default function Artwork(){
+export default function Artwork({data}){
+  const artwork = data.artwork.nodes;
   
   return (<>
     <Layout>
-      <div className="artwork-container rb">
+      <div className="artwork-container">
         <h1>Artwork</h1>
         <div className="artwork-galleryStrip">
-          <div className="galleryStrip-piece">
-            <div className="galleryStrip-piece--title">placeholder</div>
-            <img className="galleryStrip-piece--image" src="https://picsum.photos/300/360" alt=""/>
-          </div>
+          {artwork.map(artpiece=>(
+            <div className="galleryStrip-piece">
+              <div className="galleryStrip-piece--title">{artpiece.frontmatter.title}: {artpiece.frontmatter.artworkDescription} </div>
+              <GatsbyImage className="galleryStrip-piece--image" image={getImage(artpiece.frontmatter.artwork.childImageSharp)} alt="artpiece"/>
+            </div>
+          ))}
+          
         </div>
         
       </div>
@@ -21,3 +26,31 @@ export default function Artwork(){
     </Layout>
   </>)  
 }
+
+export const pageQuery = graphql`
+  query ArtworkQuery {
+    artwork: allMarkdownRemark {
+      nodes {
+        id
+        frontmatter {
+          title
+          artworkDescription
+          artwork {
+            childImageSharp {
+              gatsbyImageData(
+                placeholder: DOMINANT_COLOR
+                formats: AUTO
+                jpgOptions: {quality: 100}
+              )
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+
+
+
+`

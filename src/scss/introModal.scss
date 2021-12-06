@@ -25,16 +25,22 @@
 	opacity: 1;
 	&_text-box{
 		display: flex;
-		margin: 0 auto;
+		// margin: 0 auto;
+		justify-content: center;
 		align-items: center;
 		height: 100%;
-		padding: 0 1.45rem;
+		// padding: 0 1.45rem;
+		padding: 0 1rem;
+		word-wrap: break-word;
 		/*padding: 0 25%; desktop*/
 		@include PressStart(.85rem);
+		
 		@at-root{
 			.introText,.introCursor {
 				color: $tan;
+				font-size: 1rem;
 				line-height: 2rem;
+
 			}
 			.introButton{
 				font-size: 1.25rem;

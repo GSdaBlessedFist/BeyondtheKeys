@@ -14,7 +14,7 @@ export default function Layout({children }) {
           <li><Link to={"/stories"} activeClassName="navLinks">Stories</Link></li>
           <li><Link to={"/about"} activeClassName="navLinks">About</Link></li>
       </nav>
-        <div className="layout-container_content">
+        <div className="layout-container_content ">
           {children}
         </div>
 

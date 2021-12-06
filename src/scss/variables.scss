@@ -1,5 +1,7 @@
-$tan : hsl(34,44%,69%);
-$darkerTan: hsl(34, 44%, 30%);
+@import "helpers";
+
+$tan : hsl(34,44%,69%);/*#d2b48c*/
+$darkerTan: hsl(34, 44%, 30%);/*#6e512b*/
 
 %pageContainer{
 	display: block;
@@ -7,4 +9,23 @@ $darkerTan: hsl(34, 44%, 30%);
 	height:95%;
 	//@include b;
 	padding: 10px;
+}
+
+@media(min-width: 361px){
+	.layout-container_content {
+		margin: 0 auto;
+		// width: 800px;
+		width: clamp(360px,100%,800px);
+		border: 5px $tan solid;
+	}
+	.introText{
+		font-size: clamp(1rem,1.25rem,20px);
+	}
+	.galleryStrip-piece{
+		@include b;
+		width: clamp(300px,100%,600px);
+	}
+	.artwork-galleryStrip--image{
+		width: clamp(300px,100%,600px);
+	}
 }
