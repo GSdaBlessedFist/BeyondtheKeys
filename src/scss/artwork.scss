@@ -10,10 +10,16 @@
 			
 			@at-root{
 				.galleryStrip-piece{
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					flex-direction: column;
 					&--title{
-						width: 300px;
-						@include b($tan);
+						width: 90%;
+						//@include b($tan);
+						border-top: 5px $tan solid;
 						@include Anon;
+						font-size: clamp(1rem,1.25rem,30px);
 						padding: 5px;
 					}
 					&--image{

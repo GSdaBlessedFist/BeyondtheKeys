@@ -22,10 +22,13 @@ $darkerTan: hsl(34, 44%, 30%);/*#6e512b*/
 		font-size: clamp(1rem,1.25rem,20px);
 	}
 	.galleryStrip-piece{
-		@include b;
+		//@include b;
 		width: clamp(300px,100%,600px);
 	}
 	.artwork-galleryStrip--image{
 		width: clamp(300px,100%,600px);
+	}
+	.galleryStrip-piece--title{
+		width: 100%;
 	}
 }

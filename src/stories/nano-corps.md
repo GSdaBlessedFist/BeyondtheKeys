@@ -1,5 +1,6 @@
 ---
 title: Nano Corps
+slug: nano-corps
 author: GuyShifty
 date: 2021-11-28
 summary: corporation,nanobots,zombies

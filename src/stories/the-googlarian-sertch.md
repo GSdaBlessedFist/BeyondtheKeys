@@ -1,5 +1,6 @@
 ---
 title: the Googlarian Sertch
+slug: the-googlarian-sertch
 author: GuyShifty
 date: 2021-11-25
 summary: The left overs are hungry
