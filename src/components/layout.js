@@ -1,13 +1,19 @@
 import React from "react";
-import {Link} from 'gatsby';
+import {Link,navigate} from 'gatsby';
 import "../scss/global.scss";
 import "../scss/layout.scss";
 
 export default function Layout({children }) {
+
+  function home(){
+    navigate("/");
+  }
   return (
     <div className="layout-container">
       <div className="layout-container_header">
-        <div className="layout-container_header--title">BeyondTheKeys(_)</div>
+        <div className="layout-container_header--title" onClick={home}>
+          BeyondTheKeys(_)
+        </div>
       </div>
       <nav className="layout-container_navbar">
           <li><Link to={"/artwork"} className="navLinks">Artwork</Link></li>
@@ -18,7 +24,7 @@ export default function Layout({children }) {
           {children}
         </div>
 
-      <div className="layout-container_footer">
+      <div className="layout-container_footer" onClick={home}>
         BeyondTheKeys(_)
       </div>
     </div>

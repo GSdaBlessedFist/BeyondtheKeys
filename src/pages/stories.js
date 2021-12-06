@@ -31,23 +31,23 @@ export default function Stories({data}){
 }
 
 export const pageQuery = graphql`
-  query MyQuery {
-  blog: allMarkdownRemark {
-    posts: nodes {
-      fields {
-        slug
-      }
-      frontmatter {
-        date(fromNow: true)
-        title
-        author
-        summary
-      }
-      excerpt
-      id
-    }
-  }
-}
+  query Stories {
+	  blog: allMarkdownRemark {
+	    posts: nodes {
+	      fields {
+	        slug
+	      }
+	      frontmatter {
+	        date(fromNow: true)
+	        title
+	        author
+	        summary
+	      }
+	      excerpt
+	      id
+	    }
+	  }
+	}
 
 
 `

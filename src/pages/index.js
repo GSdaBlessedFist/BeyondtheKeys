@@ -7,7 +7,7 @@ import IntroModal from "../components/introModal";
 export default function Home({data}) {
   
   const {title,description} = data.site.siteMetadata;
-
+  
   return (<>
       
       <Layout >

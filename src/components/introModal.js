@@ -1,5 +1,5 @@
 import React,{useRef}from 'react';
-import Link from 'gatsby';
+import {navigate} from 'gatsby';
 import "../scss/introModal.scss";
 
 
@@ -7,7 +7,7 @@ export default function IntroModal(){
 	const introRef = useRef(null);
 	function hideIntro(){
 		introRef.current.style.display = 'none';
-		
+		navigate("/stories");
 	}
 
 	return (
@@ -22,7 +22,7 @@ export default function IntroModal(){
 					But there is a place where deleted bytes go.
 					A place where only the 'bad' code remains...
 					The binary void awaits your evaluation
-					<div className="beyondTheKeys-button" onClick={hideIntro}>BeyondTheKeys(<span className="blinky">_</span>)</div>
+					<div className="beyondTheKeys-button" onClick={hideIntro} to={"/stories"}>BeyondTheKeys(<span className="blinky">_</span>)</div>
 				</div>
 				
 			</div>
