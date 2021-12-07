@@ -12,11 +12,16 @@ $darkerTan: hsl(34, 44%, 30%);/*#6e512b*/
 }
 
 @media(min-width: 361px){
+	.layout-container{
+		background: url("../images/pixel-gradient-background.png");
+		background-size:  cover;
+	}
 	.layout-container_content {
 		margin: 0 auto;
 		// width: 800px;
 		width: clamp(360px,100%,800px);
 		border: 5px $tan solid;
+		
 	}
 	.introText{
 		font-size: clamp(1rem,1.25rem,20px);
