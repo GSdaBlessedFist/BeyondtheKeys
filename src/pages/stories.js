@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql, Link} from "gatsby";
+import { Helmet } from 'react-helmet';
 import Layout from "../components/layout";
 import "../scss/stories.scss";
 
@@ -8,6 +9,9 @@ export default function Stories({data}){
 	const {posts} = data.blog;
 
 	return (<>
+		<Helmet>
+        <title>Stories-BeyondTheKeys()</title>
+    </Helmet>
 		<Layout>
 			<div className="stories-container">
         <div>

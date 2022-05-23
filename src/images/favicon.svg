@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="32.000004"
+   height="31.999998"
+   viewBox="0 0 8.4666673 8.4666664"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (50ffc5b540, 2022-01-11)"
+   sodipodi:docname="favicon.svg"
+   inkscape:export-filename="/home/guyshifty/Desktop/_PORTFOLIO_/beyondthekeys_blog/src/images/favicon.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:document-units="px"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     units="px"
+     inkscape:snap-global="false"
+     inkscape:zoom="14.874331"
+     inkscape:cx="15.496496"
+     inkscape:cy="15.429266"
+     inkscape:window-width="1920"
+     inkscape:window-height="1052"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g40269" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-90.460847,-112.55047)">
+    <g
+       id="g41205">
+      <rect
+         style="fill:none;fill-opacity:1;stroke:#d2b48c;stroke-width:0.611936;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+         id="rect984"
+         width="7.8642387"
+         height="7.87606"
+         x="90.762062"
+         y="112.84577"
+         ry="0.2381175"
+         rx="0.2381175" />
+      <rect
+         style="fill:#222222;fill-opacity:1;stroke:#222222;stroke-width:0.55287;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+         id="rect984-8"
+         width="7.1051621"
+         height="7.1158423"
+         x="91.141602"
+         y="113.22588"
+         ry="0.2381175"
+         rx="0.2381175" />
+    </g>
+    <g
+       id="g40269"
+       transform="matrix(1.8491596,0,0,2.7695278,-80.197857,-206.6791)"
+       inkscape:export-filename="/home/guyshifty/Desktop/_PORTFOLIO_/beyondthekeys_blog/src/images/favicon.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <text
+         xml:space="preserve"
+         style="font-size:2.55937px;line-height:1.25;font-family:Amatic;-inkscape-font-specification:'Amatic, Normal';letter-spacing:0px;word-spacing:0px;fill:#d2b48c;fill-opacity:1;stroke:none;stroke-width:0.0573959;stroke-opacity:1"
+         x="83.107292"
+         y="131.06596"
+         id="text3128"
+         transform="scale(1.1153454,0.89658324)"><tspan
+           sodipodi:role="line"
+           id="tspan3126"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.55937px;font-family:Uroob;-inkscape-font-specification:'Uroob, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#d2b48c;fill-opacity:1;stroke:none;stroke-width:0.0573959;stroke-opacity:1"
+           x="83.107292"
+           y="131.06596">BTK</tspan></text>
+      <rect
+         style="fill:#d2b48c;fill-opacity:1;stroke:none;stroke-width:0.162367;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+         id="rect41309"
+         width="0.62196034"
+         height="0.25665143"
+         x="92.839272"
+         y="115.51352"
+         rx="0.12877071"
+         ry="0.085977681" />
+      <rect
+         style="fill:#d2b48c;fill-opacity:1;stroke:none;stroke-width:0.163314;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+         id="rect41309-5"
+         width="0.62558538"
+         height="0.2581473"
+         x="95.730003"
+         y="117.80849"
+         rx="0.12877071"
+         ry="0.085977681" />
+    </g>
+  </g>
+</svg>

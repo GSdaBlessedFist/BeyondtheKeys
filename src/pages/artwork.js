@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql, Link} from "gatsby";
+import { Helmet } from 'react-helmet';
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import Layout from "../components/layout";
 import "../scss/artwork.scss";
@@ -8,6 +9,9 @@ export default function Artwork({data}){
   const artwork = data.artwork.nodes;
   
   return (<>
+    <Helmet>
+        <title>Artwork-BeyondTheKeys()</title>
+    </Helmet>
     <Layout>
       <div className="artwork-container">
         <h1>Artwork</h1>

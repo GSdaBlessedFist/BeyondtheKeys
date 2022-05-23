@@ -1,5 +1,6 @@
-import React,{useRef}from 'react';
+import React,{useRef,useEffect}from 'react';
 import {navigate} from 'gatsby';
+import Typewriter from 'typewriter-effect';
 import "../scss/introModal.scss";
 
 
@@ -9,12 +10,13 @@ export default function IntroModal(){
 		introRef.current.style.display = 'none';
 		navigate("/stories");
 	}
-
+	
 	return (
 		<div className="intro-modal" ref={introRef}>
 			<div className="intro-modal_text-box ">
+			
 				<div className="introText">
-					A good program, some say...is alive.
+					A good program, some say... is alive.
 					Digital life pulsating through their code,
 					orderly and with purpose.
 					Errors, comments, and alas deletion

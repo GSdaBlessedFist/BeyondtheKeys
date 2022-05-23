@@ -19,14 +19,15 @@ $darkerTan: hsl(34, 44%, 30%);/*#6e512b*/
 	.layout-container_content {
 		margin: 0 auto;
 		// width: 800px;
-		width: clamp(360px,100%,800px);
-		border: 5px $tan solid;
+		width: clamp(360px,100%,600px);
+		//border: 5px $tan solid;
 		
 	}
 	.introText{
 		font-size: clamp(1rem,1.25rem,20px);
 	}
 	.galleryStrip-piece{
+		display: inline;
 		//@include b;
 		width: clamp(300px,100%,600px);
 	}
